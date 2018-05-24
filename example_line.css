@@ -1,0 +1,61 @@
+body {
+  margin: auto;
+  width: 960px;
+font-family: 'Roboto', sans-serif;
+}
+
+text {
+  font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: lightgrey;
+  shape-rendering: crispEdges;
+  display: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.x.axis path {
+  display: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.line {
+  fill: none;
+  stroke: url(#temperature-gradient);
+  stroke-width: 7px;
+    font-family: 'Roboto', sans-serif;
+}
+    
+    
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid path {
+  stroke-width: 0;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+    font-family: 'Roboto', sans-serif;
+}
+
+.focus circle {
+  fill: white;
+  stroke: lightgrey;
+  stroke-width: 5px;
+}
+  
+.hover-line {
+  stroke: lightgrey;
+  stroke-width: 2px;
+  stroke-dasharray: 3,3;
+}
