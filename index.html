@@ -5,6 +5,8 @@
     <!-- Meta Tag -->
     <meta charset="utf-8">
     <!-- CSS Stylesheet -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="example_line.css">  
     <!-- D3.js Source -->
     <script type= "text/javascript" src="https://d3js.org/d3.v4.min.js"></script> 
@@ -18,15 +20,43 @@
       <!-- Change the title below: REQUIRED-->
     <h3 style = "font-family: 'Lato', sans-serif; text-align:center; color:steelblue; font-size: 36px"><bold>Example EmotiCal Graphs</bold></h3>
       
-    <div id="one"></div>
-      <br><br><br><br>
-    <div id="two"></div>
+    <div id="one"></div>        
     
     
-      <br><br><br><br>
+    <br><br>
       
     <script type="text/javascript" src="example_line_1.js"></script> 
       
+      
+      
+      <div id="option">
+        <input name="updateButton"
+               type="button"
+               value="Update"
+               onclick="updateData()" />
+      </div>
+      
+      
+      <div class="btn-group btn-block" data-toggle="buttons">
+          <label class="btn btn-primary active">
+            <input type="radio" name="options" id="option1" checked=""> Radio 1   (preselected)
+          </label>
+          <label class="btn btn-primary">
+              <input type="radio" name="options" id="option2"> Radio 2
+          </label>
+      </div>
+      
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label class="btn btn-secondary active">
+    <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+  </label>
+  <label class="btn btn-secondary">
+    <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+  </label>
+</div>
 <!--    <script type="text/javascript" src="example_line_2.js"></script> -->
       
       
